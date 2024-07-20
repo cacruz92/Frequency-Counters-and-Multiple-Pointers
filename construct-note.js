@@ -20,15 +20,10 @@ function constructNote(msg, letters) {
     // if the frequencies of the letters is greater than or equal to the frequency of the letters in msg 
     // and every letter in msg appears in letters, then return true
     for(let key of msgFreq.keys()){
-        // if(lettersFreq.has(key) === false){
-        //     return false
-        // }
-
         if(!lettersFreq.has(key)) return false;
 
         if(lettersFreq.get(key) < msgFreq.get(key)) return false;
-
-        return true;
-    }
+        }
+    return true;
 
 }
